@@ -86,9 +86,8 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Relational Database**
+- **Animals database**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,7 +123,7 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder using: `git clone git@github.com:Tamunokuro/Vet-Clinic.git`
 
 <!--
 Example commands:
@@ -192,17 +191,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Tamunokuro](https://github.com/Tamunokuro)
+- Twitter: [tamuno____](https://twitter.com/tamuno____)
+- LinkedIn: [Joshua Blue-Jack](https://linkedin.com/in/joshua-blue-jack)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
