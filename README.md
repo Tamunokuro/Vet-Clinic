@@ -49,7 +49,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet Clinic Database] <a name="about-project"></a>
+# 📖 Vet Clinic Database <a name="about-project"></a>
 
 > Vet clinic database is a relational database to manage pets in a vet clinic.
 
