@@ -187,11 +187,7 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
-
-👤 **Author**
+## 👥 Author <a name="authors"></a>
 
 - GitHub: [Tamunokuro](https://github.com/Tamunokuro)
 - Twitter: [tamuno____](https://twitter.com/tamuno____)
