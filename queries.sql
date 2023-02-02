@@ -68,7 +68,7 @@ WHERE species.name = 'Digimon' AND owners.full_name = 'Jennifer Orwell';
 
 SELECT * FROM animals
 LEFT JOIN owners ON animals.owner_id = owners.id
-WHERE owners.full_name = 'Dean Winchester' AND animals.escape_attempts > 0;
+WHERE owners.full_name = 'Dean Winchester' AND animals.escape_attempts = 0;
 
 SELECT owners.full_name, COUNT(animals.owner_id) 
 FROM animals
