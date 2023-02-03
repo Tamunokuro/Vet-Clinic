@@ -6,8 +6,11 @@ CREATE TABLE animals (
     date_of_birth DATE NOT NULL,
     escape_attempts INT NOT NULL,
     neutered BOOLEAN NOT NULL, 
-    weight_kg DECIMAL NOT NULL,
+    weight_kg DECIMAL NOT NULL
 );
+
+ALTER TABLE animals
+ADD CONSTRAINT id PRIMARY KEY (id);
 
 ALTER Table animals
 ADD species VARCHAR(20);
@@ -37,4 +40,34 @@ ADD owner_id INT;
 
 ALTER TABLE animals
 ADD FOREIGN KEY (owner_id) REFERENCES owners (id);
+
+CREATE TABLE vets (
+    id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    date_of_graduation DATE NOT NULL
+);
+
+CREATE TABLE specialisations (
+    species_id INT,
+    vet_id INT
+);
+
+ALTER TABLE specialisations
+ADD FOREIGN KEY (species_id) REFERENCES species (id) ON DELETE CASCADE;
+
+ALTER TABLE specialisations
+ADD FOREIGN KEY (vet_id) REFERENCES vets (id) ON DELETE CASCADE;
+
+CREATE TABLE visits (
+    vet_id INT,
+    animal_id INT,
+    date_of_visit DATE
+);
+
+ALTER TABLE visits
+ADD FOREIGN KEY (vet_id) REFERENCES vets (id) ON DELETE CASCADE;
+
+ALTER Table visits
+ADD FOREIGN KEY (animal_id) REFERENCES animals (id) ON DELETE CASCADE;
 
