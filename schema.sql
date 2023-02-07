@@ -71,3 +71,9 @@ ADD FOREIGN KEY (vet_id) REFERENCES vets (id) ON DELETE CASCADE;
 ALTER Table visits
 ADD FOREIGN KEY (animal_id) REFERENCES animals (id) ON DELETE CASCADE;
 
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX visits_animal_id_index ON visits (animal_id);
+CREATE INDEX visits_vet_id_index ON visits (vet_id);
+CREATE INDEX owners_email_index ON owners (email);
