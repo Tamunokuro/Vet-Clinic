@@ -30,4 +30,15 @@ CREATE TABLE invoices (
 ALTER TABLE invoices
 ADD FOREIGN KEY (medical_history__id) REFERENCES medical_histories (id);
 
+CREATE TABLE invoice_items (
+    id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    unit_price DECIMAL(2,2) NOT NULL,
+    quantity INT NOT NULL,
+    total_price DECIMAL(6,2) NOT NULL
+);
 
+ALTER TABLE invoice_items
+ADD FOREIGN KEY (invoice_id) REFERENCES invoices (id);
+
+ALTER TABLE invoice_items
+ADD FOREIGN KEY (treatment_id) REFERENCES treatments (id);
